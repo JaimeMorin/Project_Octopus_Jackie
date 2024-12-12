@@ -31,3 +31,22 @@ Now, add the ".fq" extension (files are within subfolders)
 find . -type f -name "*.truncated" -exec sh -c 'f="{}"; mv -- "$f" "$(dirname "$f")/$(basename "${f%.truncated}").truncated.fq"' \; 
 ```
 ## NovoPlasty
+Create a config file for every sample (v4.3), then set run_novoplasty.sh, make sure to set the output folder to each config.txt
+```
+run_novoplasty.sh
+```
+Give executable rights 
+```
+chmod +x run_novoplasty.sh
+```
+Activate the environment
+```
+conda activate mitgen
+```
+Run NovoPlasty
+```
+./run_novoplasty.sh
+```
+
+
+
