@@ -71,17 +71,17 @@ $ find .  -type f -name "*.fasta"
 ```
 To quickly create a single fasta file containing all the fasta files, use: 
 ```
-merge_fasta.sh
+run_merge_fasta.sh
 ```
 Give executable rights 
 ```
-chmod +x merge_fasta.sh
+chmod +x run_merge_fasta.sh
 ```
 Run merge_fasta.sh
 ```
-./merge_fasta.sh
+./run_merge_fasta.sh
 ```
-Now download the "merged.fasta" to your local computer. Then upload the documents to Geneious for analysis and annotation  
+Now download the "merged.fasta" to your local computer. Then upload the documents to Geneious for analysis and annotation.  
 ```
 scp jaimegm@vm-srv-astbury.vm.ntnu.no:/home/shomeb/j/jaimegm/data/bigexpansion/jaime/000_BIGTREE/Jackie_Octopus/01_NovoPlasty/merged.fasta .
 ```
