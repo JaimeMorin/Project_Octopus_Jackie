@@ -47,6 +47,43 @@ Run NovoPlasty
 ```
 ./run_novoplasty.sh
 ```
+Now you should have something like this:
+```
+$ ls /data/bigexpansion/jaime/000_BIGTREE/Jackie_Octopus/01_NovoPlasty
 
+LGBBI0550  LGBBI0553  LGBBI0556  LGBBI0559  LGBBI0563  LGBBI0566  LGBBI0569 ... 
+```
+Within each folder you should have one or two fasta files 
+```
+$ find .  -type f -name "*.fasta"
+
+./LGBBI0569/Option_1_LGBBI0569.fasta
+./LGBBI0569/Contigs_1_LGBBI0569.fasta
+./LGBBI0592/Contigs_1_LGBBI0592.fasta
+./LGBBI0563/Contigs_1_LGBBI0563.fasta
+./LGBBI0563/Option_1_LGBBI0563.fasta
+./LGBBI0556/Contigs_1_LGBBI0556.fasta
+./LGBBI0556/Option_1_LGBBI0556.fasta
+./LGBBI0566/Circularized_assembly_1_LGBBI0566.fasta
+./LGBBI0589/Circularized_assembly_1_LGBBI0589.fasta
+./LGBBI0554/Option_1_LGBBI0554.fasta
+./LGBBI0554/Contigs_1_LGBBI0554.fasta
+```
+To quickly create a single fasta file containing all the fasta files, use: 
+```
+merge_fasta.sh
+```
+Give executable rights 
+```
+chmod +x merge_fasta.sh
+```
+Run merge_fasta.sh
+```
+./merge_fasta.sh
+```
+Now download the "merged.fasta" to your local computer. Then upload the documents to Geneious for analysis and annotation  
+```
+scp jaimegm@vm-srv-astbury.vm.ntnu.no:/home/shomeb/j/jaimegm/data/bigexpansion/jaime/000_BIGTREE/Jackie_Octopus/01_NovoPlasty/merged.fasta .
+```
 
 
